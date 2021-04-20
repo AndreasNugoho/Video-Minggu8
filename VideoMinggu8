@@ -1,0 +1,35 @@
+#Andreas Nugroho
+#71200646
+
+# Dedi adalah seorang penyortir data, tugas dedi adalah menyortir banyak data positive dan negative. 
+# bantulah Dedi membuat program agar dapat memudahkan pekerjaan Dedi.
+
+#Input
+#Banyaknya data 
+#Data
+
+#Proses
+#If dan Perulangan
+
+#output
+#Angka Positive 
+#Angka Negative
+
+datanya = []
+negative = []
+positive = []
+
+banyak = int(input("Berapa banyak mau menginput data :"))
+
+for i in range(1,banyak+1):
+    angka = int(input("Masukkan Angka %d:" %i))
+    datanya.append(angka)
+
+for j in range(banyak):
+    if (datanya[j]>=0):
+        positive.append(datanya[j])
+    else:
+        negative.append(datanya[j])
+
+print("Bilangan Positivenya adalah ",positive)
+print("Bilangan Negativenya adalah ",negative)
